@@ -3,25 +3,34 @@
 {%block title%}CONTACT{%endblock title%}
 
 {%block body%}
-<center><div class="container-fluid px-10000";{align-content: center}>
+<div class="container-fluid">
+    <img src = "https://source.unsplash.com/random/1200x250/?phone, contact" class="d-block w-100 px-0 mx-0", alt="..." >
+</div>
+<p></p>
+<div class="container">
+    <center><h1>Contact Us</h1></center>
     <form>
         <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <label for="exampleFormControlInput1">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
         </div>
-        <br></br>
+        <p></p>
         <div class="form-group">
             <label for="exampleFormControlInput1">Name</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Enter your name!">
+            <input type="name" class="form-control" id="exampleFormControlInput1" name="name" placeholder="Enter your name here!">
         </div>
-        <br></br>
+        <p></p>
         <div class="form-group">
-            <label for="exampleFormControlInput1">QUERY</label>
-            <input type="desc" class="form-control" id="exampleFormControlInput1" placeholder="Share your query and we'll be in touch with you very soon...">
+            <label for="exampleFormControlInput1">Phone number</label>
+            <input type="Phone" class="form-control" id="exampleFormControlInput1" name="phone" placeholder="Enter your phone number">
         </div>
-        <br></br>
-        <a href="thanks/" class="btn btn-primary">SUBMIT</a>
-
-    </form>
-</div></center>
+        <p></p>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <p></p>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+</div>
 {%endblock body%}
